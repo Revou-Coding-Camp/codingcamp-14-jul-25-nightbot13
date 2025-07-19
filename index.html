@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TLD</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/script.js"></script>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">TELIDIN</a>
+        <a href="#" class="logo"><img src="/image/teladan.png" alt="Telidin"></a>
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -31,14 +31,35 @@
     </div>
     </div>
 
+    <div class="margin" style="background-color: rgb(20, 25, 71);"></div>
+
+    <div id="salam" style="background-color: rgb(20, 25, 71);">
+        <div class="container">
+            <h1 class="judul1" style="color: rgb(255, 255, 255)">Pembuka</h1>
+            <h2 id="welcome-message" style="color: rgb(255, 255, 255)" align="justify">Hi, welcome to website</h2>
+            <h6 style="color: rgb(255, 255, 255)" align="justify">Ini adalah latihan web pertama</h6>
+            <div style="margin-top:20px;">
+                <input type="text" id="inputName" class="form-control" placeholder="Masukkan nama anda" style="max-width:300px;display:inline-block;">
+                <button type="button" class="btn btn-primary" onclick="updateWelcome()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script>
+    function updateWelcome() {
+        var name = document.getElementById('inputName').value.trim();
+        var msg = name ? 'Hi ' + name : 'Hi, welcome to website';
+        document.getElementById('welcome-message').textContent = msg;
+    }
+    </script>
+
     <div >
         <div id="profile" class="container">
-            <h1 class="judul">Profile Developer</h1>
+            <h1 class="judul">Headquarter</h1>
             <div class="row">
                 <div class="col-md-3 profile text-center">
                     <div class="img-box">
                         <div class="picture1">
-                    <img src="team1.jpg" class="img-responsive">
+                    <img src="/image/team1.jpg" class="img-responsive">
                         <ul>
                             <a href="https://www.instagram.com/mabduhh_/profilecard/?igsh=d3J6MHk3cTM4dDB1" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
                             <a href="https://wa.me/+6289620884025" target="_blank"><li><i class="fa fa-whatsapp"></i></li></a>
@@ -46,12 +67,12 @@
                         </div>
                     </div>
                      <h2>Muhammad <br>Abduh</h2>
-                     <h6>Siswaa SMA Negeri 1 Telidin yang sekarang duduk di bangku kelas 12 MIPA 2 dan berabsen 20. </h6>
+                     <h3>Bandung</h3>
                 </div>
                 <div class="col-md-3 profile text-center">
                     <div class="img-box">
                         <div class="picture1">
-                    <img src="team2.jpg" class="img-responsive">
+                    <img src="/image/team2.jpg" class="img-responsive">
                         <ul>
                             <a href="https://www.instagram.com/tian_y_a/profilecard/?igsh=c2tiYWI3MHVmcXhy" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
                             <a href="https://wa.me/+62895339282253" target="_blank"><li><i class="fa fa-whatsapp"></i></li></a>
@@ -59,13 +80,12 @@
                         </div>
                     </div>
                      <h2>Christian Yudhistira Adhi</h2>
-                     <h6>Pendiri sekaligus pemiliK</h6>
-                     <h6>PT DAGANG GEPREQ TELIDIN</h6>
+                     <h3>Yogyakarta</h3>
                 </div>
                 <div class="col-md-3 profile text-center">
                     <div class="img-box">
                         <div class="picture1">
-                    <img src="team3.jpg" class="img-responsive">
+                    <img src="/image/team3.jpg" class="img-responsive">
                         <ul>
                             <a href="https://www.instagram.com/natrars_/profilecard/?igsh=MW1nOGFvbm9ueGdnMQ==" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
                             <a href="https://wa.me/+6289623596900" target="_blank"><li><i class="fa fa-whatsapp"></i></li></a>
@@ -73,12 +93,12 @@
                         </div>
                     </div>
                      <h2>Quirinus Natra Ritchie Sjailendra</h2>
-                     <h6>Seekor makhluk nirmala yang memiliki jiwa teladan, kepedulian sesama, dan ...</h6>
+                     <h3>Jatinangor</h3>
                 </div>
                 <div class="col-md-3 profile text-center">
                     <div class="img-box">
                         <div class="picture1">
-                    <img src="team4.jpg" class="img-responsive">
+                    <img src="/image/team4.jpg" class="img-responsive">
                         <ul>
                             <a href="https://www.instagram.com/afrizal.kin/profilecard/?igsh=MXFtM3VidHl6dnpibg==" target="_blank"><li><i class="fa fa-instagram"></i></li></a>
                             <a href="https://wa.me/+62895421599473" target="_blank"><li><i class="fa fa-whatsapp"></i></li></a>
@@ -86,7 +106,7 @@
                      </div>
                     </div>
                      <h2>Afrizal Kinayung Aura Aqilan</h2>
-                     <h6>Orang-orang memanggilku dengan nama lorem ipsum dolor sit amet dst.</h6>
+                     <h3>Sleman</h3>
                 </div>
             </div>
         </div>
@@ -97,7 +117,7 @@
     <div id="news" style="background-color: rgb(20, 25, 71);">
         <div class="container">
             <h1 class="judul1" style="color: rgb(255, 255, 255)">News</h1>
-            <p style="color: rgb(255, 255, 255)" align="justify">maaf, belum ada berita terkini tentang SMA ini</p>                               
+            <p style="color: rgb(255, 255, 255)" align="justify">SMA Negeri 1 Telidin meraih peringkat pertama pada ASPD Yogyakarta tingkat SMA sederajat</p>                               
         </div>
     </div>
 
@@ -108,24 +128,24 @@
                 <table align="center" cellpadding="10">
                     <tr>
                         <td>
-                            <img src="glr1.jpg" alt="Gambar 1" />
+                            <img src="/image/glr1.jpg" alt="Gambar 1" />
                         </td>
                         <td> 
-                            <img src="glr2.jpg" alt="Gambar 2" />
+                            <img src="/image/glr2.jpg" alt="Gambar 2" />
                         </td>
                         <td>
-                            <img src="glr3.jpg" alt="Gambar 3" />
+                            <img src="/image/glr3.jpg" alt="Gambar 3" />
                         </td> 
                     </tr>
                     <tr>
                         <td>
-                            <img src="glr4.jpg" alt="Gambar 4" />
+                            <img src="/image/glr4.jpg" alt="Gambar 4" />
                         </td>
                         <td>
-                            <img src="glr5.jpg" alt="Gambar 5" />
+                            <img src="/image/glr5.jpg" alt="Gambar 5" />
                         </td>
                         <td>
-                            <img src="glr6.jpg" alt="Gambar 6" />
+                            <img src="/image/glr6.jpg" alt="Gambar 6" />
                         </td>
                     </tr>
                 </table>
@@ -139,8 +159,8 @@
         <div class="container">
             <h1 class="judul1" style="color: rgb(255, 255, 255)">About</h1>
             <h3 style="color: rgb(255, 255, 255)"><b>Developer & Designer</b></h3>
-            <p style="color: rgb(255, 255, 255)" align="justify">Website ini dibuat dikarenakan perintah Bapak Sopsed TLD. Dibuatnya website ini atas perintah bapak Sopsed TLD. Bapak Sopsed TLD telah menyuruh kami untuk membuat sebuah website ini.</p>
-            <p style="color: rgb(255, 255, 255)" align="justify">Kami mempersembahkan mahakarya yang tidak kalah dengan mahakarya clay sehingga dapat membuat semua orang tidak terkesima dengan mahakarya ini. Semoga Tuhan YME memberkatinya.</p>
+            <p style="color: rgb(255, 255, 255)" align="justify">Website ini dibuat sebagai mini project revou dan sebagai alat bagi saya untuk melatih kemampuan membuat web.</p>
+            <p style="color: rgb(255, 255, 255)" align="justify">Saya mempersembahkan mahakarya yang tidak kalah dengan mahakarya clay sehingga dapat membuat semua orang terkesima dengan mahakarya ini.</p>
             <p style="color: rgb(255, 255, 255)" align="justify">BTW INI READ MORE TIDAK BISA DIPENCET YA CUMA FORMALITAS</p>                               
             <button type="button">Read More</button>
         </div>
@@ -170,7 +190,7 @@
         <section>
             <div class="box">
                 <h3> Phone </h3>
-                <p> 0274 - 513454 </p> 
+                <h6 class="margin"> 0274 - 513454 </h6> 
             </div>
         </section>
         
@@ -178,8 +198,72 @@
         
     </div>
 
-    <footer>
-        
+   
+    <div class="margin" style="background-color: rgb(20, 25, 71);"></div>
+
+    <div id="salam" style="background-color: rgb(20, 25, 71); padding: 40px 0;">
+        <div class="container">
+            <h1 class="judul1" style="color: #fff; text-align: center; margin-bottom: 30px;">Message Us</h1>
+            <form action="" style="background: rgba(255,255,255,0.08); padding: 30px; border-radius: 12px; max-width: 500px; margin: 0 auto; box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
+                <div class="form-group">
+                    <label style="color: #fff;" for="nama">Nama:</label>
+                    <input type="text" id="nama" class="form-control" placeholder="Masukkan nama anda">
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;" for="tanggal_lahir">Tanggal lahir:</label>
+                    <input type="date" id="tanggal_lahir" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;">Jenis Kelamin:</label><br>
+                    <div style="display: flex; gap: 20px;">
+                        <div>
+                            <input type="radio" id="laki" name="jenis_kelamin" value="laki-laki">
+                            <label for="laki" style="color: #fff;">Laki-laki</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                            <label for="perempuan" style="color: #fff;">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;" for="pesan">Pesan:</label>
+                    <textarea id="pesan" class="form-control" rows="4" placeholder="Masukkan Pesan"></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <input type="submit" class="btn btn-primary" value="Submit" style="padding: 8px 32px;">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="visimisi" style="background-color: #fff; padding: 40px 0;">
+        <div class="container">
+            <h1 class="judul" style="color: #141947; text-align: center; margin-bottom: 30px;">Visi & Misi</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 style="color: #141947;">Visi</h3>
+                    <p style="color: #333; text-align: justify;">
+                        Menjadi sekolah unggulan yang berprestasi, berkarakter, dan berwawasan global.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h3 style="color: #141947;">Misi</h3>
+                    <ul style="color: #333;">
+                        <li>Meningkatkan kualitas pendidikan dan prestasi siswa.</li>
+                        <li>Membentuk karakter siswa yang berintegritas dan berakhlak mulia.</li>
+                        <li>Mendorong inovasi dan kreativitas dalam pembelajaran.</li>
+                        <li>Menjalin kerjasama dengan berbagai pihak untuk pengembangan sekolah.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: rgb(20, 25, 71); color: #fff; padding: 24px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 16px;"></div>
+            <p style="margin: 0;">&copy; 2024 SMA Negeri 1 Telidin. All rights reserved.</p>
+            <small>Developed by Me</small>
+        </div>
     </footer>
 
 </body>
